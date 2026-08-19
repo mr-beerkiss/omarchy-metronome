@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "id": "dlpwaters.metronome",
+  "name": "Metronome",
+  "version": "1.0.0",
+  "author": "DLP Waters",
+  "license": "MIT",
+  "description": "A compact, low-latency metronome for the Omarchy bar",
+  "kinds": [
+    "service",
+    "bar-widget"
+  ],
+  "entryPoints": {
+    "service": "Service.qml",
+    "barWidget": "BarWidget.qml"
+  },
+  "barWidget": {
+    "displayName": "Metronome",
+    "description": "Set a tempo, tap it in, and keep time from the bar",
+    "category": "Time",
+    "allowMultiple": false,
+    "defaultSection": "center",
+    "defaults": {
+      "bpm": 120,
+      "beatsPerBar": 4,
+      "volume": 65
+    },
+    "schema": [
+      {
+        "key": "bpm",
+        "type": "integer",
+        "label": "Default tempo (BPM)",
+        "min": 30,
+        "max": 240,
+        "step": 1,
+        "defaultValue": 120
+      },
+      {
+        "key": "beatsPerBar",
+        "type": "integer",
+        "label": "Beats per bar",
+        "min": 1,
+        "max": 12,
+        "step": 1,
+        "defaultValue": 4
+      },
+      {
+        "key": "volume",
+        "type": "integer",
+        "label": "Click volume",
+        "min": 10,
+        "max": 100,
+        "step": 5,
+        "defaultValue": 65
+      }
+    ]
+  }
+}
