@@ -8,7 +8,7 @@ locally through PipeWire and does not use the network.
 ## Install
 
 ```bash
-omarchy plugin add https://github.com/dlpwaters/omarchy-metronome.git --enable --yes
+omarchy plugin add https://github.com/mr-beerkiss/omarchy-metronome.git --enable --yes
 ```
 
 ## Use
